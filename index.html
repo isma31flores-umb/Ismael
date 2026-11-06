@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Personal - Ismael Flores Santos</title>
+    <style>
+        :root {
+            --primary-color: #0980DB;
+            --secondary-color: #189FC7;
+            --accent-color: #09DBB5;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+            --subtitle-color: #666666;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            max-width: 500px;
+            width: 100%;
+            overflow: hidden;
+            border-top: 6px solid var(--primary-color);
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 25px 20px;
+        }
+
+        .info-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            padding: 12px;
+            background-color: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .info-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-weight: 600;
+            width: 140px;
+            color: var(--subtitle-color);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .value {
+            font-weight: 500;
+            color: var(--text-color);
+            flex: 1;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: rgba(9, 219, 181, 0.15);
+            color: #05826b;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="profile-card">
+        <header class="header">
+            <h1>Ismael Flores Santos</h1>
+            <p>Ingeniería en Sistemas Computacionales</p>
+        </header>
+
+        <section class="content">
+            <div class="info-group">
+                <span class="label">Fecha de Nac.:</span>
+                <span class="value">07 / 06 / 2005</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">Carrera:</span>
+                <span class="value">Ing. en Sistemas Computacionales</span>
+            </div>
+
+            <div class="info-group">
+                <span class="label">Intereses:</span>
+                <span class="value"><span class="tag">Voleibol</span></span>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
